@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 03</title>
+    <style>
+        body{
+            background: rgb(186, 255, 215);
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        span{
+            color: darkred;
+            font-weight: bold;
+        }
+        table, th, td{
+            border-collapse: collapse;
+            border: 1px solid rgb(158, 158, 158);
+        }
+        th{
+            background-color: rgb(158, 38, 38);
+            padding: 15px 10px;
+            font-size: 20px;
+        }
+        /* Configiração individual de cada célula (td) */
+        td{
+            padding: 5px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        td:nth-child(1){
+            width: 100px;
+            text-align: right;
+        }
+        td:nth-child(2){
+            width: 350px;
+        }
+        td:nth-child(3){
+            width: 120px;
+        }
+        td:nth-child(4){
+            width: 70px;
+            text-align: center;
+            font-weight: bold;
+        }
+        td:nth-child(5){
+            width: 70px;
+            text-align: right;
+        }
+        /* Cor de fundo para cada linha */
+        tr:nth-child(odd){
+            background-color: rgb(255, 185, 98);
+        }
+        tr:nth-child(even){
+            background-color: rgb(255, 183, 125);
+        }
+        /* tr:nth-child(odd):hover td{
+            background-color: rgb(255, 69, 0);
+        }
+        tr:nth-child(even):hover td{
+            background-color: rgb(233, 124, 0);
+        } */
+
+        /* o modo "1n+2" significa: x*n+y, onde X representa valor múltiplo, N significa valor fixo e Y ponto inicial.
+        EX: 3n => multiplo de 3 [3x0=0, 3x1=3, 3x2=6, ...] 
+        EX: 2n+2 => multiplo de 2 a partir do elemento 2 [2x0+2=2, 2x1+2= 4, 2x2+2 = 4, ...]
+        EX: -n+3 => representa todos os 3 primeiros elementos */
+        tr:nth-child(1n+2):hover{
+            background-color: darkslategray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Tabela modelo 003</h1>
+    <p>Esta tabela é composta com atributo <span>odd</span> e <span>even</span> com <span>:hover</span>, onde ao passar o mouse sobre eles, a cor de fundo é alterado</p>
+    <table>
+        <th>Código</th>
+        <th>Descrição</th>
+        <th>Fornecedor</th>
+        <th>Quant.</th>
+        <th>Valor</th>
+        <tr>
+            <td>457823</td>
+            <td>Smartphone Samsung S20 32GB</td>
+            <td>Samsung</td>
+            <td>8</td>
+            <td>999,27</td>
+        </tr>
+        <tr>
+            <td>1024331</td>
+            <td>Liquificador BS-3581 110V Arno</td>
+            <td>Arno</td>
+            <td>12</td>
+            <td>435,99</td>
+        </tr>
+        <tr>
+            <td>9987</td>
+            <td>Notebook Ideapad 330 1TB W10 8GB Lenovo</td>
+            <td>Lenovo</td>
+            <td>6</td>
+            <td>2799,99</td>
+        </tr>
+        <tr>
+            <td>87885</td>
+            <td>Cama Box Casal 200x190cm Ortobom</td>
+            <td>Ortobom</td>
+            <td>3</td>
+            <td>989,12</td>
+        </tr>
+    </table>
+</body>
+</html>

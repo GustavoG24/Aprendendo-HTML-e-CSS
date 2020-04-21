@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 02</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        p{
+            padding: 5px 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            margin: auto;
+        }
+        /*borda da tabela*/
+        table, th, td{
+            text-align: center;
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+        th{
+            background-color: gray;
+        }
+
+        /* dimensao individual */
+        td:nth-child(1){
+            width: 150px;
+            text-align: left;
+        }
+        td:nth-child(2){
+            width: 80px;
+        }
+        td:nth-child(3), td:nth-child(4), td:nth-child(5){
+            width: 80px;
+        }
+
+        /* coloração ordenada: odd: par e even: impar */
+        tr:nth-child(even){
+            background-color: rgb(241, 220, 172);
+        }
+        tr:nth-child(odd){
+            background-color: rgb(155, 229, 211);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Tabela modelo 002</h1>
+    <p>Tabela simples com algumas configurações individuais como: centralização dos textos de quase todas as colunas, cor de fundo nas linhas, margem interna (padding) e outros.</p>
+    <div>
+        <table>
+            <th>Veiculo</th>
+            <th>Distancia</th>
+            <th>Consumo/litro</th>
+            <th>Tempo</th>
+            <th>-</th>
+            <tr>
+                <td>Palio 1.8</td>
+                <td>45 km</td>
+                <td>12.8km/litro</td>
+                <td>45min</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Moto Titan 125</td>
+                <td>55 km</td>
+                <td>24km/litro</td>
+                <td>30min</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Bicicleta</td>
+                <td>60 km</td>
+                <td>-</td>
+                <td>1hs 25min</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
